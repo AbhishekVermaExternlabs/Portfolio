@@ -1,0 +1,17 @@
+const SkillItem = (title,percentage) => {
+    <div className='skill_data mb-3'>
+                   <div className='skill_title d-flex align-items-center justify-content-between'>
+                      <h6>{title}</h6>
+                      <span>{percentage}</span>
+                   </div>
+                   <div className='skill_bar'>
+                      <span className='skill_bar-percentage' 
+                      style={{width: `${percentage}`}}></span>
+                   </div>
+                </div>
+}
+
+<SkillItem 
+                key={index} 
+                title = {item.title} 
+                percentage = {item.percentage}/>
